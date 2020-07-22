@@ -25,6 +25,16 @@ $(window).scroll(function(){
 		
 	});
 
+	  $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        grid: true,
+        min: 5,
+        max: 120,
+        from: 15,
+        to: 50,
+        postfix: " мин."
+    });
+
 	$(".menu-mobile li:not('.menu-mobile__haschild') > a").click(function() {
 			$(".menu-mobile").slideUp(400);
 		});

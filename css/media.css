@@ -305,6 +305,35 @@ width: 318px;
 .slider-steps .slick-next {
     left: 365px;
 }
+.constructor-main_center {
+	-webkit-order: -1;
+	-moz-order: -1;
+	-ms-order: -1;
+	-o-order: -1;
+	order: -1;
+}
+.constructor-main__title {
+    font-size: 36px;
+    line-height: 43px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    }
+    .row_buttons-constructor {
+    	padding: 0 60px;
+    }
+    .constructor-main__name {
+    	padding-top: 30px;
+    	padding-bottom: 20px;
+    }
+    .shelf-wrap {
+    margin-top: 40px;
+}
+.constructor-main {
+	padding-bottom: 100px;
+}
+.constructor-main__name {
+    padding-top: 0;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -682,6 +711,100 @@ border-radius: 10px;
 .slider-steps__image {
 	height: 240px;
 }
+.row_buttons-constructor {
+	padding: 0;
+	margin: 0 -5px;
+}
+.row_buttons-constructor > div {
+	padding: 0 5px;
+}
+.constructor-main__name {
+	font-size: 12px;
+	line-height: 15px;
+	padding-bottom: 10px;
+}
+.constructor-main__title {
+    font-size: 28px;
+    line-height: 30px;
+    padding: 20px 0;
+    }
+    .btn-main {
+    	font-size: 12px;
+    	line-height: 15px;
+    	height: 60px;
+    }
+    .btn-main_width {
+    	padding-left: 10px;
+    	padding-right: 10px;
+    }
+    .shelf:not(.shelf_1) {
+    	display: none;
+    }
+    .shelf {
+    	width: 100%;
+    	margin: 0;
+    	justify-content: center;
+    	padding-right: 0;
+    }
+    .shelf::after {
+    	width: 320px;
+    	left: -26px;
+    	right: 0;
+    	top: 94%;
+    	margin: auto;
+    }
+    .shelf__item img {
+    width: 81px;
+    height: 132px;
+}
+.shelf__item::before {
+	width: 89px;
+	height: 136px;
+}
+.shelf-icon_1 {
+	display: none;
+}
+.shelf-icon_2 {
+	width: 57px;
+	height: 97px;
+bottom: -101px;
+    left: 240px;
+   right: 0;
+   margin: 0 auto;
+}
+.constructor-main_center {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+}
+.dots-list,
+.constructor-main__name {
+	-webkit-order: -1;
+	-moz-order: -1;
+	-ms-order: -1;
+	-o-order: -1;
+	order: -1;
+}
+.dots-list {
+	margin-top: 0;
+}
+.shelf-wrap_right {
+	display: none;
+}
+.constructor-main {
+    padding-bottom: 145px;
+}
+.shelf-wrap {
+	margin: 0 -15px;
+	padding: 0 15px;
+	padding-top: 40px;
+	background-image: url(../img/back2.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
 }
 
 /* Small Devices, Tablets */
@@ -735,5 +858,13 @@ border-radius: 10px;
 }
 .show-tablet {
 	display: none !important;
+}
+}
+@media only screen and (min-width : 1700px) {
+.shelf-wrap {
+	left: -50px;
+}
+.shelf-wrap_right {
+	left: 50px;
 }
 }
