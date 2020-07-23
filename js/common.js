@@ -72,6 +72,24 @@ $(window).scroll(function(){
 		slidesToScroll: 1,
 	});
 
+	 $('.eating-slider').slick({
+   
+      dots: false,
+  arrows: true,
+  accessibility: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  variableWidth: true,
+  autoplaySpeed: 3000,
+  centerMode: true,
+  responsive: [{
+    breakpoint: 768,
+    settings: {}
+    
+  }]
+  
+  });
+
 
 $('.btn-tab').click(function(event) {
 		event.preventDefault();
