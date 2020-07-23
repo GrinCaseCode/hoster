@@ -19,10 +19,21 @@ $(window).scroll(function(){
 	$(".btn-menu").click(function() {
 		if ($(".menu-mobile").is(":hidden")) {
 			$(".menu-mobile").slideDown(400);
+			$("body").addClass("body_menu");
 		} else {
 			$(".menu-mobile").slideUp(400);
+			$("body").removeClass("body_menu");
 		}
 		
+	});
+
+		$(document).mouseup(function (e){ 
+		var div = $(".menu-mobile"); 
+		if (!div.is(e.target) 
+		    && div.has(e.target).length === 0) { 
+			$(".menu-mobile").slideUp(400);
+			$("body").removeClass("body_menu");
+		}
 	});
 
 	 // стайлер для select
@@ -40,6 +51,7 @@ $(window).scroll(function(){
 
 	$(".menu-mobile li:not('.menu-mobile__haschild') > a").click(function() {
 			$(".menu-mobile").slideUp(400);
+			$("body").removeClass("body_menu");
 		});
 
 		$(".menu-mobile__haschild a").click(function(e) {
@@ -110,9 +122,19 @@ $('.slider-years').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
   asNavFor: '.slider-history',
-  dots: true,
+  dots: false,
   centerMode: true,
-  focusOnSelect: true
+  focusOnSelect: true,
+  responsive: [{
+    breakpoint: 992,
+    settings: {
+ slidesToShow: 3,
+ centerMode: true,
+ variableWidth: true,
+  slidesToScroll: 1,
+    }
+    
+  }]
 });
 
 $('.btn-tab').click(function(event) {
