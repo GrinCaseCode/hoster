@@ -25,12 +25,15 @@ $(window).scroll(function(){
 		
 	});
 
+	 // стайлер для select
+	 $('select').styler();
+
 	  $(".js-range-slider").ionRangeSlider({
         type: "double",
         grid: true,
         min: 5,
         max: 120,
-        from: 15,
+        from: 25,
         to: 50,
         postfix: " мин."
     });
@@ -76,20 +79,41 @@ $(window).scroll(function(){
    
       dots: false,
   arrows: true,
-  accessibility: false,
   slidesToShow: 1,
   slidesToScroll: 1,
   variableWidth: true,
-  autoplaySpeed: 3000,
   centerMode: true,
   responsive: [{
-    breakpoint: 768,
-    settings: {}
+    breakpoint: 992,
+    settings: {
+ variableWidth: false,
+ slidesToShow: 1,
+  centerMode: false,
+  slidesToScroll: 1,
+    }
     
   }]
   
   });
 
+	 $('.slider-history').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		  asNavFor: '.slider-years',
+		slidesToScroll: 1,
+	});
+
+
+$('.slider-years').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: '.slider-history',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
 
 $('.btn-tab').click(function(event) {
 		event.preventDefault();

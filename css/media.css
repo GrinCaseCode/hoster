@@ -11,7 +11,11 @@
 }
 
 }
-
+@media only screen and (max-width : 1635px) {
+.cloud_1 {
+	left: -230px;
+}
+}
 @media only screen and (max-width : 1585px) {
 .menu {
     padding: 0 170px;
@@ -358,6 +362,39 @@ width: 318px;
     	top: 10px;
     	left: 10px;
     }
+    .eating-slider {
+    	margin-left: -30px;
+    	margin-right: -30px;
+    }
+    .eating-slider:before {
+    	right: 70px;
+    }
+    .eating-slider:after {
+    	left: 70px;
+    }
+    .descr-text br {
+    	display: none;
+    }
+    .data {
+    	padding-top: 60px;
+    }
+    .data-wrapper__right > div, .data-wrapper__left > div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.data-wrapper__right > div {
+	padding-left: 45px;
+	padding-right: 0;
+}
+.news-detale {
+	padding-bottom: 40px;
+}
+.eating-slider .slick-prev {
+	left: 20px;
+}
+.eating-slider .slick-next {
+	right: 20px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -878,6 +915,194 @@ line-height: 17px;
 .news + .constructor {
 	padding-top: 20px;
 }
+.news-detale {
+	padding-top: 15px;
+	padding-bottom: 0;
+}
+.news-detale .title-section_center {
+	text-align: left;
+	padding-bottom: 20px;
+}
+.main-text {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+.soft-month {
+	display: none;
+}
+.eating-slider__img {
+	max-width: 100%;
+	margin-bottom: 104px;
+	height: 272px !important;
+}
+.eating-slider {
+	margin-left: 0;
+	margin-right: 0;
+}
+.slick-slide:not(.slick-current) .eatig-slider-text {
+	opacity: 1;
+}
+.slick-slide:not(.slick-current) .eating-slider__img img {
+    opacity:1;
+    transform: none;
+}
+.eating-slider:after,
+.eating-slider:before {
+	display: none;
+}
+.eating-slider .slick-arrow {
+	top: 340px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.eating-slider .slick-prev {
+	left: -100px;
+}
+.eating-slider .slick-next {
+	right: -100px;
+}
+.eatig-slider-text {
+	padding-top: 0;
+}
+.eating-slider {
+	margin-top: 0;
+	padding-top: 20px;
+	margin-bottom: 40px;
+}
+.block-buyer {
+	text-align: center;
+}
+.buyer-descr {
+	margin-top: 20px;
+	font-size: 24px;
+line-height: 30px;
+}
+.descr-text {
+	font-size: 14px;
+	line-height: 20px;
+}
+.data-wrapper__title::after,
+.data-wrapper__left .data-wrapper__title::after {
+    position: absolute;
+    display: block;
+    content: " ";
+    right: -24px;
+    width: 16px;
+    bottom: -1px;
+   height: 1px;
+   background-color: #fff;
+}
+.data-wrapper__title::before,
+.data-wrapper__right .data-wrapper__title::after {
+    position: absolute;
+    display: block;
+    content: " ";
+    left: -24px;
+    width: 16px;
+    bottom: -1px;
+   height: 1px;
+   background-color: #fff;
+}
+.data-wrapper__title::after {
+	right: -24px !important;
+	left: auto !important;
+}
+.data-wrapper__left .data-wrapper__title::before {
+	height: 1px;
+	bottom: -1px;
+}
+.data-wrapper__title {
+	border-width: 1px;
+}
+.data-wrapper__right .data-wrapper__title::before {
+	height: 1px;
+	bottom: -1px;
+}
+.data-wrapper__right > div {
+	padding-left: 0;
+}
+.data-wrapper__title {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.data-wrapper .row .data-wrapper__text {
+	font-size: 14px;
+	line-height: 20px;
+	padding: 0;
+	margin: 0 -25px;
+	margin-bottom: 40px;
+}
+.data-wrapper__bottom {
+	display: none;
+}
+.data {
+	padding-bottom: 0px;
+}
+.data-wrapper__title span {
+	margin-left: -25px;
+	display: block;
+}
+.data .title-section {
+	text-align: center;
+	padding-bottom: 5px;
+}
+.eatig-slider-text br {
+	display: none;
+}
+.list-items li {
+	font-size: 14px;
+	line-height: 15px;
+	margin-bottom: 15px;
+}
+.list-items li:before {
+	top: -8px;
+}
+.news-detale .list-items_numbers {
+	margin-top: 15px;
+}
+.btn-cloud_simple::after {
+	display: none;
+}
+.back-detale {
+	padding-top: 20px;
+}
+.item-form__descr {
+    font-size: 12px;
+    line-height: 14px;
+    top: 18px;
+    left: 21px;
+    }
+    .item-form select {
+    	font-size: 18px;
+    	line-height: 22px;
+    	padding-left: 21px;
+    	border-radius: 22px;
+    }
+    .irs-from, .irs-to, .irs-single {
+    	font-size: 12px !important;
+    }
+    .irs--flat .irs-min, .irs--flat .irs-max {
+    	display: none;
+    }
+    .wrap-range {
+    	margin-top: 25px;
+    	margin-bottom: 45px;
+    }
+    .jq-selectbox__select-text {
+    	background-position: center right 18px;
+    }
+    .jq-selectbox__select-text {
+    	padding-left: 20px;
+    	font-size: 18px;
+    line-height: 22px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    }
+    .recepts-list .item-form {
+    	margin-bottom: 10px;
+    }
 }
 
 /* Small Devices, Tablets */
