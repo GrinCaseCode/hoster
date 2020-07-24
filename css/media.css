@@ -7,7 +7,7 @@
 	left: 5px;
 }
 .right-header {
-	right: 50px;
+	right: 50px; 
 }
 .articles-wrap::before {
 	width: 1583px;
