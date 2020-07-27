@@ -1410,6 +1410,34 @@ line-height: 30px;
 .news .btn-tab {
 	font-size: 18px;
 }
+.recept-left__table-block {
+	max-width: 100%;
+	padding-left: 0;
+	padding-right: 15px;
+	padding-top: 15px;
+}
+.recept__descr {
+	padding-bottom: 0;
+}
+.col_film {
+	-webkit-order: inherit;
+	-moz-order: inherit;
+	-ms-order: inherit;
+	-o-order: inherit;
+	order: inherit;
+}
+.consist-block {
+    font-size: 14px;
+    padding: 65px 41px;
+    margin: 0 -50px;
+    margin-top: 40px;
+    min-height: 342px;
+    padding-bottom: 20px;
+}
+    .consist-block li {
+    padding-left: 0;
+    margin-bottom: 10px;
+}
 }
 /*==========  Mobile First Method  ==========*/
 
