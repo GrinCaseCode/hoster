@@ -2213,3 +2213,168 @@ color: rgba(255, 255, 255, 1);
 	font-size: 20px;
 	font-family: "LatoRegular";
 }
+.tabs-catalog {
+	font-size: 22px;
+line-height: 30px;
+padding-bottom: 110px;
+font-family: "PFREMINDERPRO-BOLD";
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.tabs-catalog li {
+	margin: 0 15px;
+}
+.tabs-catalog li a {
+	width: 211px;
+	height: 80px;
+	background-color: rgba(0, 0, 0, 0.0001);
+border: 4px solid #245B9D;
+color: #fff;
+border-radius: 25px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.tabs-catalog li a:hover {
+	background-color: #245B9D;
+}
+.item-catalog {
+	width: 410px;
+	height: 240px;
+	max-width: 100%;
+	padding-top: 40px;
+	padding-left: 220px;
+	padding-right: 22px;
+	margin: 0 auto;
+	color: #fff;
+	display: block;
+	margin-bottom: 80px;
+	background-image: url(../img/bg_catalog.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	position: relative;
+	z-index: 2;
+}
+.item-catalog::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../img/bg_catalog.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.item-catalog::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../img/bg_catalog2.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.item-catalog:hover::after {
+	opacity: 1;
+}
+.item-catalog:hover::before {
+	opacity: 0;
+}
+.item-catalog__name {
+	font-family: "PFREMINDERPRO-BOLD";
+	display: block;
+	margin-bottom: 35px;
+	font-size: 24px;
+line-height: 30px;
+}
+.item-catalog__image {
+	position: absolute;
+	bottom: 60px;
+	left: 40px;
+	display: inline-block;
+}
+.item-catalog__image img {
+	max-width: 137px;
+	max-height: 230px;
+	display: block;
+}
+.item-catalog__features {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+.feature-catalog {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+.feature-catalog__value {
+	font-size: 12px;
+line-height: 14px;
+display: block;
+font-family: "LatoBold";
+}
+.feature-catalog__value span {
+	font-size: 16px;
+line-height: 19px;
+	display: block;
+}
+.feature-catalog {
+	margin-right: 25px;
+}
+.feature-catalog:last-child {
+	margin-right: 0;
+}
+.feature-catalog img {
+	margin-right: 10px;
+}
+.catalog-list .btn-cloud {
+	margin: 0 auto;
+}
+.align_center {
+	text-align: center;
+}
+.catalog-list {
+	padding-top: 15px;
+	padding-bottom: 40px;
+}

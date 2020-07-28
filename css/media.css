@@ -100,6 +100,28 @@
 	padding-left: 20px;
 	padding-right: 20px;
 }
+.btn-receip {
+	width: 267px;
+height: 189px;
+    top: -183px;
+    right: 0;
+ filter: drop-shadow(0px 20px 30px rgba(15, 65, 120, 0.5));
+background-image: url(../img/icon_btn_receip_tablet.svg);
+transform: none !important;
+}
+.btn-receip::before {
+	display: none;
+}
+.btn-receip span {
+	    left: 70px;
+    top: 65px;
+    transform: none;
+    }
+    .descr-title {
+    font-size: 16px;
+    padding-top: 10px;
+    line-height: 30px;
+}
 }
 @media only screen and (max-width : 1380px) {
 .choose-btn {
@@ -124,6 +146,7 @@
 .slider-recipes .slick-next {
 	right: -38px;
 }
+
 }
 @media only screen and (max-width : 1290px) and (min-width : 1200px) {
 	.shelf_center {
@@ -258,28 +281,7 @@
 	padding-left: 8px;
 	padding-right: 8px;
 }
-.btn-receip {
-	width: 267px;
-height: 189px;
-    top: -183px;
-    right: 0;
- filter: drop-shadow(0px 20px 30px rgba(15, 65, 120, 0.5));
-background-image: url(../img/icon_btn_receip_tablet.svg);
-transform: none !important;
-}
-.btn-receip::before {
-	display: none;
-}
-.btn-receip span {
-	    left: 70px;
-    top: 65px;
-    transform: none;
-    }
-    .descr-title {
-    font-size: 16px;
-    padding-top: 10px;
-    line-height: 30px;
-}
+
 .item-receip {
 	margin: 0 10px;
 }
@@ -522,6 +524,23 @@ width: 318px;
     .dots-list {
     	margin-top: 0;
     	margin-top: -10px;
+    }
+    .item-catalog__image img {
+    max-width: 91px;
+    max-height: 150px;
+}
+.item-catalog__image {
+    bottom: 83px;
+    left: 20px;
+    }
+    .item-catalog {
+    width: 410px;
+    height: 220px;
+    max-width: 100%;
+    padding-top: 28px;
+    padding-left: 124px;
+    padding-right: 22px;
+        margin-bottom: 45px;
     }
    
 }
@@ -1411,7 +1430,9 @@ line-height: 30px;
     .show-tablet {
     	display: block;
     }
-
+.tabs-catalog {
+	padding-bottom: 70px;
+}
 }
 
 /* Small Devices, Tablets */
@@ -1431,6 +1452,19 @@ line-height: 30px;
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+.feature-catalog {
+    margin-right: 14px;
+}
+.tabs-catalog li a {
+    width: 136px;
+    height: 80px;
+    padding: 0 15px;
+    font-size: 17px;
+    line-height: 22px;
+    }
+    .tabs-catalog li {
+    margin: 0 4px;
+}
 
 }
 
