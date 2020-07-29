@@ -22,8 +22,11 @@
     left: -410px;
 }
 .cloud_6 {
-	right: -300px;
+	right: -377px;
 } 
+.cloud_4 {
+	left: -400px;
+}
 }
 @media only screen and (max-width : 1635px) {
 .cloud_1 {
@@ -141,12 +144,14 @@ transform: none !important;
     padding-left: 40px;
 }
 .slider-recipes .slick-prev {
-	left: -38px;
+	left: -28px;
 }
 .slider-recipes .slick-next {
-	right: -38px;
+	right: -28px;
 }
-
+.recept-film {
+	width: 525px;
+}
 }
 @media only screen and (max-width : 1290px) and (min-width : 1200px) {
 	.shelf_center {
@@ -168,13 +173,19 @@ transform: none !important;
 	padding-left: 35px;
 	}
 	 .slider-recipes .slick-prev {
-	left: -15px;
+	left: 5px;
 }
 .slider-recipes .slick-next {
-	right: -15px;
+	right: 5px;
 }
 .item-receip {
 	margin: 0 11px;
+}
+.recept-film {
+    width: 490px;
+}
+.always-img {
+	left: 0;
 }
 }
 /* Large Devices, Wide Screens */
@@ -264,13 +275,13 @@ transform: none !important;
 	;padding-left: 15px;
 	padding-right: 15px;
 	padding-right: 8px;
-	width: 220px;
+	width: 225px;
 }
 .item-receip__time {
 	font-size: 14px;
 }
 .item-receip_big {
-	width: 470px;
+	width: 480px;
 }
 .item-receip__text {
 	font-size: 18px;
@@ -361,10 +372,7 @@ width: 318px;
     	position: relative;
     	padding-top: 200px;
     }
-    .consist-block::after,
-    .recept-left::after {
-    	display: none;
-    }
+   
     .recept-film {
     	width: 465px;
     	height: 620px;
@@ -542,7 +550,34 @@ width: 318px;
     padding-right: 22px;
         margin-bottom: 45px;
     }
-   
+.contacts .list-items li {
+	font-size: 16px;
+}   
+.always-img {
+	left: -30px;
+}
+.always-img img {
+	max-width: 355px;
+}
+.always-text {
+	max-width: 590px;
+}
+.always .title-section {
+    padding-top: 85px;
+    padding-bottom: 45px;
+}
+.location-address {
+	font-size: 16px;
+}
+.item-location {
+	margin-bottom: 22px;
+}
+.location {
+	padding-bottom: 140px;
+}
+.steps {
+	padding-top: 65px;
+}
 }
 
 
@@ -1433,10 +1468,30 @@ line-height: 30px;
 .tabs-catalog {
 	padding-bottom: 70px;
 }
+.row_contact-tabs {
+	margin-top: 40px;
+}
+.brands-block {
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.always .title-section {
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.slider-steps__item {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
+	 .consist-block::after,
+    .recept-left::after {
+    	display: none;
+    }
 .shelf-wrap_mobile .shelf__item:nth-child(n+6) {
 	display: none;
 }
@@ -1447,7 +1502,180 @@ line-height: 30px;
  	max-width: 100%;
  	width: 100%;
  }
-
+.basket-btns {
+	display: none;
+}
+.tab-container-contacts {
+	padding-top: 0;
+}
+.brand-link {
+	margin: 0;
+	margin-top: 30px;
+	display: inline-block;
+}
+.btn-tab-mob img {
+	margin-right: 20px;
+}
+.btn-tab-mob {
+	padding: 0 0px;
+	height: 80px;
+	margin-right: 20px;
+	border-radius: 20px;
+	border: 4px solid #245b9d;
+	max-width: 100%;
+	margin: 0;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	color: #ecf5ff;
+	font-size: 22px;
+	line-height: 30px;
+	font-family: "PFREMINDERPRO-BOLD";
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.btn-tab-mob::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: -12px;
+	width: 20px;
+	height: 20px;
+	background-color: #245b9d;
+	border: 6px #2c67ae solid;
+	border-radius: 50%;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn-tab-mob::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	left: -12px;
+	width: 20px;
+	height: 20px;
+	background-color: #245b9d;
+	border: 6px #2c67ae solid;
+	border-radius: 50%;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn-tab-mob.active {
+	background-color: #245b9d;
+}
+.btn-tab-mob.active::before,
+.btn-tab-mob.active::after {
+	opacity: 1;
+}
+.brands-block {
+	margin-bottom: 10px;
+}
+.hidden_mobile {
+	display: none;
+}
+.contacts .list-items {
+	margin-top: 40px;
+}
+.always-form textarea,
+.always-form input {
+	padding-left: 58px;
+	font-size: 14px;
+	line-height: 20px;
+}
+.always-form:before {
+	left: 20px;
+}
+.always-form-text {
+	font-size: 14px;
+	line-height: 20px;
+}
+.always-img {
+	display: none;
+}
+.locations-wrap {
+	margin-top: 0;
+	height: auto;
+	max-width: 100%;
+}
+.locatation-name {
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 2px;
+}
+.location-address {
+	font-size: 14px;
+	line-height: 20px;
+}
+.map-wrap__before,
+.map-wrap__after {
+	display: none;
+}
+.map-wrap {
+	margin: 0 -20px;
+	margin-top: 10px;
+	width: auto;
+}
+.location {
+	padding-top: 10px;
+	padding-bottom: 80px;
+}
+.contacts .list-items li {
+	font-size: 14px;
+	line-height: 20px;
+}
+.map-wrap::after {
+	width: 600px;
+	left: -180px;
+	right: 0;
+	margin: 0 auto;
+}
+.contacts .list-items {
+    margin-top: 34px;
+}
+.brands-block {
+	height: 110px;
+	padding: 20px;
+}
+.tab-container-contacts .tab-pane-step > .row {
+	margin: 0 -10px;
+}
+.tab-container-contacts .tab-pane-step > .row > div {
+	padding: 0 5px;
+}
+.row_contact-tabs {
+	margin: 0;
+}
+.buy-text {
+	margin-bottom: 0;
+}
+.contacts .title-section {
+	padding-bottom: 20px;
+}
+.tab-pane-step {
+	margin: 0 -15px;
+	padding: 0 20px;
+}
+.always .title-section {
+	padding-top: 20px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -1465,7 +1693,12 @@ line-height: 30px;
     .tabs-catalog li {
     margin: 0 4px;
 }
-
+.constructor .title-section br {
+	display: none;
+}
+.constructor .title-section {
+	max-width: 290px;
+}
 }
 
 /* Custom, iPhone Retina */
@@ -1531,6 +1764,40 @@ line-height: 30px;
 .footer__copy {
     margin-top: 94px;
 }
+.recept-left::after {
+    width: 21px;
+    height: 21px;
+    left: 80%;
+}
+.consist-block::after {
+    width: 19px;
+    height: 10px;
+    left: 96%;
+    top: 155px;
+    }
+    .recept__descr {
+    	padding-bottom: 15px;
+    }
+    .basket-btns a {
+    	padding-left: 15px;
+    }
+    .contacts .list-items li {
+    	line-height: 21px;
+    }
+    .always-img img {
+    max-width: 251px;
+}
+.always-form textarea, .always-form input {
+	padding-left: 60px;
+}
+.always-form:before {
+	left: 25px;
+}
+.locations-wrap {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 30px;
+}
 }
 /*==========  Mobile First Method  ==========*/
 
@@ -1546,7 +1813,10 @@ line-height: 30px;
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	.show_mobile,
+.btn-tab-mob {
+	display: none !important;
+}
 }
 
 /* Medium Devices, Desktops */

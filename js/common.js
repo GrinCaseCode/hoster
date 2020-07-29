@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-
+$('.locations-wrap').jScrollPane();
 //прилипающие меню
 var $menu = $("#menu");
 $(window).scroll(function(){
@@ -79,6 +79,7 @@ $(window).scroll(function(){
 		}
 		]
 	});
+	
 	$('.slider-steps').slick({
 		arrows: true,
 		dots: false,
@@ -160,6 +161,24 @@ $('.btn-tab.show-mobile').click(function(event) {
 		}
 	});
 
+$('.btn-tab-mob').click(function(event) {
+		event.preventDefault();
+		$(".tab-pane-step").slideUp();
+		$('.btn-tab-mob').removeClass("active");
+		if ($(this).next(".tab-pane-step").is(":hidden")) {
+			$(this).next(".tab-pane-step").slideDown();
+			$(this).addClass("active");
+		} else {
+			$(this).next(".tab-pane-step").slideUp();
+			$(this).removeClass("active");
+		}
+	});
+
+
+$('.always-reset').click(function(){
+$(".always-form input, .always-form textarea").val('');
+
+});
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
 	//<a class="fancybox"><img src="image.jpg" /></a>
