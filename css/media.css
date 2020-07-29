@@ -1484,6 +1484,9 @@ line-height: 30px;
     -o-transition: all 1s;
     transition: all 1s;
 }
+.wrap-recipes {
+	margin: 0;
+}
 }
 
 /* Small Devices, Tablets */
