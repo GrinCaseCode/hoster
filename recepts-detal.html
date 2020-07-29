@@ -18,9 +18,10 @@
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="libs/jscrollpane/jquery.jscrollpane.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.35" />
-	<link rel="stylesheet" href="css/media.css?ver=1.35" />
+	<link rel="stylesheet" href="css/main.css?ver=1.45" />
+	<link rel="stylesheet" href="css/media.css?ver=1.45" />
 </head>
 <body>
 
@@ -30,7 +31,7 @@
 			<div class="cloud cloud_left cloud_1">
 				<img src="img/cloud1.svg" alt="alt">
 			</div>
-			<div class="cloud cloud_right cloud_2">
+			<div class="cloud cloud_right cloud_2 hidden_1440">
 				<img src="img/cloud2.svg" alt="alt">
 			</div>
 
@@ -42,7 +43,7 @@
 				<img src="img/cloud4.svg" alt="alt">
 			</div>
 
-			<div class="cloud cloud_right cloud_5">
+			<div class="cloud cloud_right cloud_5 hidden_1440">
 				<img src="img/cloud5.svg" alt="alt">
 			</div>
 
@@ -129,9 +130,9 @@
 				<h2 class="title-section show-mobile">Смузибоул с греческим йогуртом, овсянко и орехом кешью</h2>
 				<div class="row">
 					<div class="col-xl-7 col-md-6 col_stat">
-						<h2 class="title-section title-section_recept">Смузибоул с греческим йогуртом, овсянко и орехом кешью</h2>
+						<h2 class="title-section title-section_recept">Смузибоул с греческим йогуртом, овсянкой и орехом кешью</h2>
 						<div class="row">
-							<div class="col-xl-5 col-md-6">
+							<div class="col-xl-5 col-lg-12 col-md-6">
 								<div class="recept-left">
 									<div class="recept__descr">Вам понадобится для этого ...</div>
 									<div class="recept-left__image">
@@ -156,7 +157,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-7 col-md-6 col_pl">
+							<div class="col-xl-7 col-lg-12 col-md-6 col_pl">
 								<div class="consist-block">
 									<ul>
 										<li>240 мл несладкого греческого йогурта</li>
@@ -182,11 +183,13 @@
 			</div>
 		</div>
 
+		
+
 		<div class="steps">
-			<div class="container">
-				<ul class="slider-steps">
-					<li>
-						<div class="slider-steps__item">
+			<ul class="slider-steps">
+				<li>
+					<div class="slider-steps__item">
+						<div class="container">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="slider-steps__image">
@@ -201,9 +204,11 @@
 								</div>
 							</div>
 						</div>
-					</li>
-					<li>
-						<div class="slider-steps__item">
+					</div>
+				</li>
+				<li>
+					<div class="slider-steps__item">
+						<div class="container">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="slider-steps__image">
@@ -211,16 +216,92 @@
 									</div>
 								</div>
 								<div class="col-md-6 item-step__right">
-									<div class="title-section">Шаг 2</div>
+									<div class="title-section">Шаг 3</div>
 									<div class="text">
 										<p>Миксером взбейте яйца с 2 ст. л. сахара и солью в пышную пену. Добавьте разрыхлитель для теста и снова перемешайте. Насыпьте овсяные хлопья и муку, влейте 4 ст. л. растопленного сливочного масла и простоквашу, аккуратно перемешайте и оставьте тесто на 15-2 минут.</p>
 									</div>
 								</div>
 							</div>
 						</div>
-					</li>
-				</ul>
-			</div>
+					</div>
+				</li>
+				<li>
+					<div class="slider-steps__item">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="slider-steps__image">
+										<img src="img/step1.jpg" alt="alt">
+									</div>
+								</div>
+								<div class="col-md-6 item-step__right">
+									<div class="title-section">Шаг 3</div>
+									<div class="text">
+										<p>Миксером взбейте яйца с 2 ст. л. сахара и солью в пышную пену. Добавьте разрыхлитель для теста и снова перемешайте. Насыпьте овсяные хлопья и муку, влейте 4 ст. л. растопленного сливочного масла и простоквашу, аккуратно перемешайте и оставьте тесто на 15-2 минут.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="slider-steps__item">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="slider-steps__image">
+										<img src="img/step1.jpg" alt="alt">
+									</div>
+								</div>
+								<div class="col-md-6 item-step__right">
+									<div class="title-section">Шаг 3</div>
+									<div class="text">
+										<p>Миксером взбейте яйца с 2 ст. л. сахара и солью в пышную пену. Добавьте разрыхлитель для теста и снова перемешайте. Насыпьте овсяные хлопья и муку, влейте 4 ст. л. растопленного сливочного масла и простоквашу, аккуратно перемешайте и оставьте тесто на 15-2 минут.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="slider-steps__item">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="slider-steps__image">
+										<img src="img/step1.jpg" alt="alt">
+									</div>
+								</div>
+								<div class="col-md-6 item-step__right">
+									<div class="title-section">Шаг 3</div>
+									<div class="text">
+										<p>Миксером взбейте яйца с 2 ст. л. сахара и солью в пышную пену. Добавьте разрыхлитель для теста и снова перемешайте. Насыпьте овсяные хлопья и муку, влейте 4 ст. л. растопленного сливочного масла и простоквашу, аккуратно перемешайте и оставьте тесто на 15-2 минут.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="slider-steps__item">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="slider-steps__image">
+										<img src="img/step1.jpg" alt="alt">
+									</div>
+								</div>
+								<div class="col-md-6 item-step__right">
+									<div class="title-section">Шаг 3</div>
+									<div class="text">
+										<p>Миксером взбейте яйца с 2 ст. л. сахара и солью в пышную пену. Добавьте разрыхлитель для теста и снова перемешайте. Насыпьте овсяные хлопья и муку, влейте 4 ст. л. растопленного сливочного масла и простоквашу, аккуратно перемешайте и оставьте тесто на 15-2 минут.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
 		</div>
 
 		<div class="recipes hidden-mob">
@@ -362,10 +443,11 @@
 <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 <script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
 <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+<script src="libs/jscrollpane/jquery.jscrollpane.min.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
 <script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
-<script src="js/common.js?ver=1.35"></script>
+<script src="js/common.js?ver=1.45"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
