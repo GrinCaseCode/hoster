@@ -1374,59 +1374,7 @@ line-height: 30px;
 .item-history .text-page {
 	padding: 0 15px;
 }
-.slick-current .item-year {
-	font-size: 40px;
-	line-height: 48px;
-}
-.item-year {
-	font-size: 14px;
-	line-height: 17px;
-}
-.slider-years .slick-arrow {
-	width: 19px;
-	height: 32px;
-	bottom: 0;
-}
-.slider-years {
-	max-width: 250px;
-	margin: 0 auto;
-	margin-top: 30px;
-}
-.item-year {
-	padding-top: 8px;
-	margin-left: 25px;
-	margin-right: 25px;
-	height: 80px;
-}
-.slider-years::before {
-	max-width: 90%;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-}
-.item-year::before {
-	width: 19px;
-	height: 19px;
-	    top: -21px;
-}
-.item-year::after {
-	width: 21px;
-	height: 29px;
-	top: -26px;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
-}
-.slider-years .slick-arrow {
-	bottom: 60px;
-}
-.slider-years .slick-prev {
-	left: -24px;
-	right: auto;
-}
-.slider-years .slick-next {
-	right: -24px;
-	left: auto;
-}
+
 .health__right .health__image {
 	float: right;
 	width: 150px;
@@ -1554,11 +1502,21 @@ line-height: 30px;
 	margin-bottom: 15px;
 	margin-left: 35px;
 }
+.slick-current .item-year {
+    font-size: 60px;
+}
+.slider-years {
+	margin-left: -25px;
+	margin-right: -25px;
+}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
+	.hidden_smallmob {
+		display: none !important;
 	 .consist-block::after,
+	}
     .recept-left::after {
     	display: none;
     }
@@ -1711,12 +1669,8 @@ line-height: 30px;
 	font-size: 14px;
 	line-height: 20px;
 }
-.map-wrap::after {
-	width: 600px;
-	left: -180px;
-	right: 0;
-	margin: 0 auto;
-}
+
+
 .contacts .list-items {
     margin-top: 34px;
 }
@@ -1745,6 +1699,59 @@ line-height: 30px;
 }
 .always .title-section {
 	padding-top: 20px;
+}
+.slick-current .item-year {
+	font-size: 40px;
+	line-height: 48px;
+}
+.item-year {
+	font-size: 14px;
+	line-height: 17px;
+}
+.slider-years .slick-arrow {
+	width: 19px;
+	height: 32px;
+	bottom: 0;
+}
+.slider-years {
+	max-width: 250px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.item-year {
+	padding-top: 8px;
+	margin-left: 25px;
+	margin-right: 25px;
+	height: 80px;
+}
+.slider-years::before {
+	max-width: 90%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.item-year::before {
+	width: 19px;
+	height: 19px;
+	    top: -21px;
+}
+.item-year::after {
+	width: 21px;
+	height: 29px;
+	top: -26px;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+.slider-years .slick-arrow {
+	bottom: 60px;
+}
+.slider-years .slick-prev {
+	left: -24px;
+	right: auto;
+}
+.slider-years .slick-next {
+	right: -24px;
+	left: auto;
 }
 }
 
@@ -1794,6 +1801,15 @@ line-height: 30px;
     }
     .constructor-final {
     padding-bottom: 40px;
+}
+
+}
+@media only screen and (max-width : 370px) {
+	.map-wrap::after {
+	width: 600px;
+	left: -180px;
+	right: 0;
+	margin: 0 auto;
 }
 }
 @media only screen and (max-width : 350px) {
@@ -1895,8 +1911,10 @@ line-height: 30px;
 }
 .locations-wrap {
 	max-width: 100%;
-	height: auto;
 	margin-bottom: 30px;
+}
+.history {
+	padding-bottom: 0;
 }
 }
 /*==========  Mobile First Method  ==========*/

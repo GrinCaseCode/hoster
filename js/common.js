@@ -127,7 +127,7 @@ $('.slider-years').slick({
   centerMode: true,
   focusOnSelect: true,
   responsive: [{
-    breakpoint: 992,
+    breakpoint: 767,
     settings: {
  slidesToShow: 3,
  centerMode: true,
