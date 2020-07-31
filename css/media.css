@@ -32,7 +32,7 @@
 .cloud_1 {
 	left: -240px;
 }
-.cloud_5 {
+.cloud_5 {  
 	right: -310px;
 }
 .cloud_5 {
@@ -1918,7 +1918,6 @@ line-height: 30px;
 }
 }
 /*==========  Mobile First Method  ==========*/
-
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
@@ -1936,7 +1935,6 @@ line-height: 30px;
 	display: none !important;
 }
 }
-
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 	.shelf-wrap_mobile,
