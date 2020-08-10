@@ -20,12 +20,45 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="libs/jscrollpane/jquery.jscrollpane.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.100" />
-	<link rel="stylesheet" href="css/media.css?ver=1.100" />
+	<link rel="stylesheet" href="css/main.css?ver=1.102" />
+	<link rel="stylesheet" href="css/media.css?ver=1.102" />
 </head>
 <body>
 
 	<div class="wrapper">
+
+		<div class="preloader">
+			<ul class='circle-container'>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<div class="circle-element">
+					<div class="dot"></div>
+				</div>
+			</ul>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+						<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						<feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+				</defs>
+			</svg>
+		</div>
 
 		<div class="clouds-wrap">
 			<div class="cloud cloud_left cloud_1">
@@ -388,7 +421,7 @@
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
 <script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
-<script src="js/common.js?ver=1.100"></script>
+<script src="js/common.js?ver=1.102"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
