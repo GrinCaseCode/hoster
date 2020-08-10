@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="libs/jscrollpane/jquery.jscrollpane.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.103" />
+	<link rel="stylesheet" href="css/media.css?ver=1.103" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="preloader">
+			<ul class='circle-container'>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<div class="circle-element">
+					<div class="dot"></div>
+				</div>
+			</ul>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+						<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						<feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+				</defs>
+			</svg>
+		</div>
+
+		<div class="clouds-wrap">
+			<div class="cloud cloud_left cloud_1 hidden_1440">
+				<img src="img/cloud1.svg" alt="alt">
+			</div>
+			<div class="cloud cloud_right cloud_2">
+				<img src="img/cloud2.svg" alt="alt">
+			</div>
+
+			<div class="cloud cloud_left cloud_3">
+				<img src="img/cloud2.svg" alt="alt">
+			</div>
+
+			<div class="cloud cloud_left cloud_4">
+				<img src="img/cloud4.svg" alt="alt">
+			</div>
+
+			<div class="cloud cloud_right cloud_5 hidden_1440">
+				<img src="img/cloud5.svg" alt="alt">
+			</div>
+
+			<div class="cloud cloud_right cloud_6">
+				<img src="img/cloud4.svg" alt="alt">
+			</div>
+
+			<div class="cloud cloud_left cloud_7">
+				<img src="img/cloud2.svg" alt="alt">
+			</div>
+		</div>
+
+		<header class="header">
+			<a href="#" class="choose-btn">
+				<img src="img/choose_cloud.svg" alt="alt">
+				<span class="choose-btn__text">Выбери свой Геркулес</span>
+			</a>
+			<div class="container">
+				<ul class="menu">
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Продукция</a></li>
+					<li><a href="#">Рецепты</a></li>
+					<li><a href="#">
+						<img src="img/logo.svg" alt="alt">
+					</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Где купить</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="right-header">
+				<a href="#" class="btn-question"></a>
+				<div class="btn-menu"></div>
+				<a href="#" class="logo-mobile">
+					<img src="img/logo.svg" alt="alt">
+				</a>
+				<a href="#" class="btn-search"></a>
+			</div>
+			<div class="menu-mobile">
+				<ul class="menu-mobile__list">
+					<li><a href="#">О нас</a></li>
+					<li class="menu-mobile__haschild">
+						<a href="#">Продукция</a>
+						<div class="mobile-dropdown">
+							<div class="mobile-dropdown__title">Варочные</div>
+							<ul class="mobile-dropdown__tags">
+								<li><a href="#">Цельное зерно</a></li>
+								<li><a href="#">Резаные зерна</a></li>
+							</ul>
+							<div class="mobile-dropdown__title">Моментальные</div>
+							<ul class="mobile-dropdown__tags">
+								<li><a href="#">Каши с фруктами</a></li>
+								<li><a href="#">Каши с вареньем</a></li>
+								<li><a href="#">Каши с ягодами</a></li>
+								<li><a href="#">Каши с коэнзимом</a></li>
+								<li><a href="#">Каши со злаками</a></li>
+								<li><a href="#">Каши ассорти</a></li>
+								<li><a href="#">Каши с шоколадом</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Рецепты</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Где купить</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<a href="#" class="choose-btn">
+					<img src="img/choose_cloud.svg" alt="alt">
+					<span class="choose-btn__text">Выбери свой Геркулес</span>
+				</a>
+			</div>
+		</header>
+
+		<div class="container">
+			<ul class="breadcumbs">
+				<li><a href="#">ГЛАВНАЯ</a></li>
+				<li>Где купить</li>
+			</ul>
+		</div>
+
+		<div class="contacts">
+			<div class="container">
+				<div class="title-section">Где купить </div>
+				<div class="buy-text main-text"> Сбытовая сеть компании охватывает всю территорию страны, включая крупнейшие федеральные сети. Овсяные хлопья Геркулес - 100% натуральный продукт без добавок. В ассортименте есть варочные хлопья как длительного приготовления (время варки до 20 минут), так и быстрого (время варки от 2 до 5 минут). </div>
+				<div class="row row_contact-tabs">
+					<div class="col-xl-6 col-md-8">
+						<ul class="basket-btns">
+							<li>
+								<a href="#tab_contact1"  class="btn-tab active">
+									<img src="img/basket/basket-2.svg" alt="alt" />
+									Розничне сети
+								</a>
+							</li>
+							<li>
+								<a href="#tab_contact2"  class="btn-tab">
+									<img src="img/basket/basket-1.svg" alt="alt" />
+									Онлайн магазины
+								</a>
+							</li>  
+						</ul>
+					</div>
+					<div class="col-xl-6 col-md-4">
+						<ul class="list-items hidden_mobile">
+							<li>Продукция нашей компании предоставлена в 500 розничных сетях и на 50 онлайн площадках</li>
+						</ul>
+					</div>
+				</div>
+				<div class="tab-container-contacts">
+					<a href="#" class="btn-tab-mob active"><img src="img/basket/basket-2.svg" alt="alt" />Розничне сети</a> 
+					<div class="tab-pane-step" id="tab_contact1">
+						<div class="row">
+							<div class="col-xl-3 col-lg-4 col-md-4 col-6">
+								<a href="#" class="brands-block">
+									<img src="img/brands/brand-1.png" alt="alt"/>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 col-6">
+								<a href="#" class="brands-block">
+									<img src="img/brands/brand-2.png" alt="alt"/>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 col-6">
+								<a href="#" class="brands-block">
+									<img src="img/brands/brand-3.png" alt="alt"/>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 col-6">
+								<a href="#" class="brands-block">
+									<img src="img/brands/brand-4.png" alt="alt"/>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 col-6">
+								<a href="#" class="brands-block">
+									<img src="img/brands/brand-5.png" alt="alt"/>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 col-6">
+								<a href="#" class="brands-block ">
+									<img src="img/brands/brand-6.png" alt="alt"/>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 col-6 hidden_tablet">
+								<a href="#" class="brands-block ">
+									<img src="img/brands/brand-7.png" alt="alt"/>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 col-6 hidden_tablet">
+								<a href="#" class="brands-block ">
+									<img src="img/brands/brand-8.png" alt="alt"/>
+								</a>
+							</div>
+						</div>
+						<a href="#" class="brand-link main-text">... еще 28 розничных магазинов</a>
+					</div>
+					<a href="#" class="btn-tab-mob"><img src="img/basket/basket-1.svg" alt="alt" />Онлайн магазины</a> 
+					<div class="tab-pane-step" id="tab_contact2">
+						<div class="row">
+							<div class="col-xl-3 col-lg-4 col-md-4 col-6">
+								<a href="#" class="brands-block">
+									<img src="img/brands/brand-4.png" alt="alt"/>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 col-6">
+								<a href="#" class="brands-block">
+									<img src="img/brands/brand-5.png" alt="alt"/>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 col-6">
+								<a href="#" class="brands-block">
+									<img src="img/brands/brand-1.png" alt="alt"/>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 col-6">
+								<a href="#" class="brands-block">
+									<img src="img/brands/brand-2.png" alt="alt"/>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 col-6">
+								<a href="#" class="brands-block">
+									<img src="img/brands/brand-3.png" alt="alt"/>
+								</a>
+							</div>
+							
+							<div class="col-xl-3 col-lg-4 col-md-4 col-6">
+								<a href="#" class="brands-block ">
+									<img src="img/brands/brand-6.png" alt="alt"/>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 col-6 hidden_tablet">
+								<a href="#" class="brands-block ">
+									<img src="img/brands/brand-7.png" alt="alt"/>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 col-6 hidden_tablet">
+								<a href="#" class="brands-block ">
+									<img src="img/brands/brand-8.png" alt="alt"/>
+								</a>
+							</div>
+						</div>
+						<a href="#" class="brand-link main-text">... еще 10 розничных магазинов</a>
+					</div>
+				</div>
+				<ul class="list-items show_mobile">
+					<li>Продукция нашей компании предоставлена в 500 розничных сетях и на 50 онлайн площадках</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="always">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-md-8">
+						<div class="title-section">Всегда рядом</div>
+						<div class="always-text main-text">Наша продукция представлена в 50 000 торговых точках. Выберите город в котором вы находитесь	и мы подскажем ближайшие к Вам магазины, в которых сможете приобрести нашу продукцию</div>
+						<form class="always-form">
+							<textarea>г Санкт-Петербург, Литейный проспект, 159</textarea>
+							<div class="always-reset"> 
+								<img src="img/always/always-3.svg" alt="" />
+							</div>
+							<div class="always-form-text">вы можете указать адрес вашего дома, чтобы результаты были точнее</div>
+						</form>
+					</div>
+					<div class="col-md-4">
+						<div class="always-img">
+							<img src="img/always/always-1.png" alt="alt" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="location">
+			<div class="container">
+				<div class="row ">
+					<div class="col-xl-6 col-lg-5 col-md-6">
+						<div class="locations-wrap">
+							<div class="item-location active">
+								<div class="locatation-name"><div class="location-address__distance">300 м</div>  Пятерочка </div>
+								<div class="location-address">г Санкт-Петербург, Литейный проспект, 25-29</div>
+							</div>
+							<div class="item-location">
+								<div class="locatation-name"><div class="location-address__distance">550 м</div>  Азбука Вкуса </div>
+								<div class="location-address">г Санкт-Петербург, Литейный проспект, 35-39 </div>
+							</div>
+							<div class="item-location">
+								<div class="locatation-name"><div class="location-address__distance">700 м</div>  Пятерочка </div>
+								<div class="location-address">г Санкт-Петербург, ул. Пестеля, 159</div>
+							</div>
+							<div class="item-location">
+								<div class="locatation-name"><div class="location-address__distance">710 м</div>  Азбука Вкуса </div>
+								<div class="location-address">  г Санкт-Петербург, Литейный проспект, 25-29 </div>
+							</div>
+							<div class="item-location">
+								<div class="locatation-name"><div class="location-address__distance">710 м</div>  Пятерочка </div>
+								<div class="location-address">  г Санкт-Петербург, Литейный проспект, 25-29 </div>
+							</div>
+							<div class="item-location">
+								<div class="locatation-name"><div class="location-address__distance">710 м</div>  Пятерочка </div>
+								<div class="location-address">  г Санкт-Петербург, Литейный проспект, 25-29 </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-7 col-md-6 col-map">
+						<div class="map-wrap">
+							<div class="map-wrap__before"></div>
+							<div class="map-wrap__after"></div>
+							<div id="map"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-3 col-lg-4 col-md-4">
+						<a href="#" class="footer__logo">
+							<img src="img/footer-logo.svg" alt="alt">
+						</a>
+						<div class="show-tablet">
+							<a href="tel:+7 (495) 755 84 64" class="footer__phone">+7 (495) 755 84 64</a>
+							<div class="footer__descr">
+								<p>Россия, 121596, Москва, ЗАО,</p>
+								<p>ул. Горбунова, д. 2, стр. 3, оф. В909</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 hidden_tablet">
+						<a href="tel:+7 (495) 755 84 64" class="footer__phone">+7 (495) 755 84 64</a>
+						<div class="footer__descr">
+							<p>Россия, 121596, Москва, ЗАО,</p>
+							<p>ул. Горбунова, д. 2, стр. 3, оф. В909</p>
+						</div>
+						<a href="#" class="footer__politics">Политика конфиденциальности</a>
+					</div>
+					<div class="col-xl-3 col-lg-5 col-md-4">
+						<ul class="footer__nav">
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Продукция</a></li>
+							<li><a href="#">Рецепты</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Где купить</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<div class="show-tablet">
+							<a href="#" class="footer__politics">Политика конфиденциальности</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-4">
+						<div class="footer__right">
+							<ul class="social-list">
+								<li><a href="#"><img src="img/ic_vk.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/ic_fb.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/ic_insta.svg" alt="alt"></a></li>
+							</ul>
+							<div class="footer__copy">Разработка сайта — <img src="img/copy.svg" alt="alt"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+<script src="libs/jscrollpane/jquery.jscrollpane.min.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+<script src="js/common.js?ver=1.103"></script>
+<script>
+	$(document).ready(function() {
+		google.maps.event.addDomListener(window, 'load', init);
+		function init() {
+			var mapOptions = {
+				zoom: 16,
+				scrollwheel: false,
+				disableDefaultUI: true,
+				center: new google.maps.LatLng(59.942351, 30.348099), 
+			};
+			var icon1 = "img/pin.png";
+			var icon2 = "img/pin2.png";
+			var mapElement = document.getElementById('map');
+			var map = new google.maps.Map(mapElement, mapOptions);
+			var marker1 = new google.maps.Marker({
+				draggable: true,
+				raiseOnDrag: false,
+				icon: icon2,
+				map: map,
+				position:new google.maps.LatLng(59.942351, 30.348099)
+			});
+
+			var marker2 = new google.maps.Marker({
+				draggable: true,
+				raiseOnDrag: false,
+				icon: icon1,
+				map: map,
+				position:new google.maps.LatLng(59.940791, 30.347931)
+			});
+
+			var marker3 = new google.maps.Marker({
+				draggable: true,
+				raiseOnDrag: false,
+				icon: icon1,
+				map: map,
+				position:new google.maps.LatLng(59.942758, 30.345298)
+			});
+
+			var marker4 = new google.maps.Marker({
+				draggable: true,
+				raiseOnDrag: false,
+				icon: icon1,
+				map: map,
+				position:new google.maps.LatLng(59.943538, 30.347007)
+			});
+
+			marker1.addListener('click', function() {
+				marker2.setIcon(icon1);
+				marker3.setIcon(icon1);
+				marker4.setIcon(icon1);
+				marker1.setIcon(icon2);
+			});
+			marker2.addListener('click', function() {
+				marker1.setIcon(icon1);
+				marker3.setIcon(icon1);
+				marker4.setIcon(icon1);
+				marker2.setIcon(icon2);
+			});
+			marker3.addListener('click', function() {
+				marker2.setIcon(icon1);
+				marker1.setIcon(icon1);
+				marker4.setIcon(icon1);
+				marker3.setIcon(icon2);
+			});
+			marker4.addListener('click', function() {
+				marker2.setIcon(icon1);
+				marker1.setIcon(icon1);
+				marker4.setIcon(icon2);
+				marker3.setIcon(icon1);
+			});
+		}
+	});
+</script> 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd-2jWpCxwGuVZ0vb0bOCjEcG2VlQhHsA&callback=initMap"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
