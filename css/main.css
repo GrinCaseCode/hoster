@@ -2761,9 +2761,7 @@ left: -35px;
 .always-form textarea,
 .always-form input {
     
-    padding: 24px 0px 20px 89px;
-    padding-right: 45px;
-    padding-top: 24px;
+    padding: 24px 45px 20px 89px;
     font-family: 'LatoRegular', sans-serif;
     color: #ecf5ff;
     font-size: 18px;
@@ -2983,7 +2981,7 @@ bottom: -17px;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #333ddd;
+  background-color: #2c67ae;
   z-index: 1000;
 }
 
@@ -3241,3 +3239,4 @@ bottom: -17px;
 .preloader-site {
 	overflow: hidden !important;
 }
+
