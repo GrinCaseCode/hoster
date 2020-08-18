@@ -20,8 +20,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="libs/jscrollpane/jquery.jscrollpane.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.103" />
-	<link rel="stylesheet" href="css/media.css?ver=1.103" />
+	<link rel="stylesheet" href="css/main.css?ver=1.116" />
+	<link rel="stylesheet" href="css/media.css?ver=1.116" />
 </head>
 <body>
 
@@ -208,7 +208,7 @@
 					</div>
 					<div class="col-xl-5 col-md-6 col_film">
 						<div class="recept-film">
-							<a href="#" class="btn-cloud"><span>Смотрите видеорецепт</span></a>
+							<a href="http://www.youtube.com/embed/ChCUvdaYBDs?enablejsapi=1&wmode=opaque" class="btn-cloud fancybox-video fancybox.iframe"><span>Смотрите видеорецепт</span></a>
 							<img src="img/recept-film.png" alt="alt">
 						</div>
 					</div>
@@ -465,6 +465,36 @@
 		
 	</div>
 
+	<div id="video1" class="modal-block">
+		<div class="modal-wrap-video">
+			<div class="container">
+				<div id="player"></div>
+				<!--<iframe width="560" height="315" id="player" src="https://www.youtube.com/embed/v9R78Hy2tyg?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+			</div>
+		</div>
+	</div>
+
+	<div id="modal-receip" class="modal-block">
+		<div class="modal-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="image-modal">
+							<img src="img/card1.png" alt="alt">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="modal-title">Q10 с Тыквой и тыквенными семечками</div>
+						<div class="text-modal">
+							<p>Каша с коэнзимом Q10 и коллагеном не только улучшает пищеварение, но и помогает сохранить красоту и молодость. Тыква — ценный диетический продукт и кладезь витаминов. Она помогает замедлить процессы старения, улучшает восстановление тканей и благотворно влияет на состояние кожи и волос. Семена тыквы содержат аминокислоту триптофан, которая синтезируется в серотонин — «гормон удовольствия и хорошего настроения»</p>
+						</div>
+						<a href="#" class="btn-cloud"><span>Перейти <br>к продукту</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -480,7 +510,53 @@
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
 <script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
-<script src="js/common.js?ver=1.103"></script>
+<script src="js/common.js?ver=1.116"></script>
+<script src="http://www.youtube.com/player_api"></script>
+<script>
+	function onPlayerReady(event) {
+
+	}
+
+	function onPlayerStateChange(event) {
+		if (event.data === 0) {
+			$.fancybox.close();
+			$.fancybox.open("#modal-receip");
+		}
+	}
+	function onYouTubePlayerAPIReady() {
+		$(document).ready(function() {
+
+
+			$(".fancybox-video")
+			.attr('rel', 'gallery')
+			.fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+				nextEffect  : 'none',
+				prevEffect  : 'none',
+				padding     : 0,
+				margin      : 10,
+				beforeShow  : function() {
+					var _caption = "<a href='#modal-receip' class='btn-video fancybox'>Смотреть продукт</a>" 
+					this.title = _caption;
+					var id = $.fancybox.inner.find('iframe').attr('id');
+
+					var player = new YT.Player(id, {
+						events: {
+							'onReady': onPlayerReady,
+							'onStateChange': onPlayerStateChange
+						}
+					});
+
+
+				}
+			});
+
+
+		});
+
+	}
+</script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
