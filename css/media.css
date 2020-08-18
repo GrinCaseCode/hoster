@@ -1,3 +1,25 @@
+@media only screen and (max-height : 815px) {
+.modal-title {
+    font-size: 48px;
+    line-height: 50px;
+    padding-bottom: 25px;
+}
+.text-modal {
+    font-size: 17px;
+    line-height: 28px;
+    }
+    .modal-wrap .btn-cloud {
+    margin-top: 14px;
+}
+.image-modal img {
+    max-width: 280px;
+    }
+    .modal-wrap {
+    	padding-top: 40px;
+    	padding-bottom: 20px;
+    }
+}
+
 /*==========  Desktop First Method  ==========*/
 @media only screen and (max-width : 1800px) {
 .menu {
@@ -1875,6 +1897,26 @@ line-height: 30px;
 .links-choise .choice-items {
 	margin-left: 0;
 }
+
+.image-modal img {
+    max-width: 210px;
+}
+.modal-title {
+    font-size: 39px;
+    line-height: 47px;
+    padding-bottom: 20px;
+}
+.text-modal {
+    font-size: 14px;
+    line-height: 23px;
+}
+.btn-video {
+    font-size: 16px;
+    padding: 0px 42px;
+    height: 45px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -2085,3 +2127,4 @@ line-height: 30px;
 	left: 50px;
 }
 }
+

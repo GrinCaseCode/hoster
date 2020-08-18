@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	
+
 $('.locations-wrap').jScrollPane();
 //прилипающие меню
 var $menu = $("#menu");
@@ -183,7 +185,14 @@ $(".always-form input, .always-form textarea").val('');
 	//Документация: http://fancybox.net/howto
 	//<a class="fancybox"><img src="image.jpg" /></a>
 	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
-	$(".fancybox").fancybox();
+	$(".fancybox").fancybox({
+		autoFocus: false,
+		helpers:  {
+			overlay : {
+				locked : false
+			}
+		}
+	});
 
 	  setInterval(function () {
         $('.preloader').fadeOut();
