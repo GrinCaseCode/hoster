@@ -3352,3 +3352,6 @@ font-family: "LatoBold";
 .fancybox-type-iframe .fancybox-inner {
 	width: 100% !important;
 }
+.fancybox-overlay {
+	background: rgba(25, 21, 47, 0.8);
+}
