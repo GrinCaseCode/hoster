@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="libs/jscrollpane/jquery.jscrollpane.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.130" />
+	<link rel="stylesheet" href="css/media.css?ver=1.130" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="preloader">
+			<ul class='circle-container'>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<div class="circle-element">
+					<div class="dot"></div>
+				</div>
+			</ul>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+						<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						<feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+				</defs>
+			</svg>
+		</div>
+
+		<div class="clouds-wrap">
+			<div class="cloud cloud_left cloud_1">
+				<img src="img/cloud1.svg" alt="alt">
+			</div>
+			<div class="cloud cloud_right cloud_2">
+				<img src="img/cloud2.svg" alt="alt">
+			</div>
+
+			<div class="cloud cloud_left cloud_3">
+				<img src="img/cloud2.svg" alt="alt">
+			</div>
+
+			<div class="cloud cloud_left cloud_4">
+				<img src="img/cloud4.svg" alt="alt">
+			</div>
+
+			<div class="cloud cloud_right cloud_5">
+				<img src="img/cloud5.svg" alt="alt">
+			</div>
+
+
+		</div>
+
+		<header class="header">
+			<a href="#" class="choose-btn">
+				<img src="img/choose_cloud.svg" alt="alt">
+				<span class="choose-btn__text">Выбери свой Геркулес</span>
+			</a>
+			<div class="container">
+				<ul class="menu">
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Продукция</a></li>
+					<li><a href="#">Рецепты</a></li>
+					<li><a href="#">
+						<img src="img/logo.svg" alt="alt">
+					</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Где купить</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="right-header">
+				<a href="#" class="btn-question"></a>
+				<div class="btn-menu"></div>
+				<a href="#" class="logo-mobile">
+					<img src="img/logo.svg" alt="alt">
+				</a>
+				<a href="#" class="btn-search"></a>
+				<ul class="list-language">
+					<li class="active"><a href="#">Ru</a></li>
+					<li><a href="#">En</a></li>
+				</ul>
+			</div>
+			<div class="menu-mobile">
+				<ul class="list-language">
+					<li class="active"><a href="#">Ru</a></li>
+					<li><a href="#">En</a></li>
+				</ul>
+				<ul class="menu-mobile__list">
+					<li><a href="#">О нас</a></li>
+					<li class="menu-mobile__haschild">
+						<a href="#">Продукция</a>
+						<div class="mobile-dropdown">
+							<div class="mobile-dropdown__title">Варочные</div>
+							<ul class="mobile-dropdown__tags">
+								<li><a href="#">Цельное зерно</a></li>
+								<li><a href="#">Резаные зерна</a></li>
+							</ul>
+							<div class="mobile-dropdown__title">Моментальные</div>
+							<ul class="mobile-dropdown__tags">
+								<li><a href="#">Каши с фруктами</a></li>
+								<li><a href="#">Каши с вареньем</a></li>
+								<li><a href="#">Каши с ягодами</a></li>
+								<li><a href="#">Каши с коэнзимом</a></li>
+								<li><a href="#">Каши со злаками</a></li>
+								<li><a href="#">Каши ассорти</a></li>
+								<li><a href="#">Каши с шоколадом</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Рецепты</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Где купить</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<a href="#" class="choose-btn">
+					<img src="img/choose_cloud.svg" alt="alt">
+					<span class="choose-btn__text">Выбери свой Геркулес</span>
+				</a>
+			</div>
+		</header>
+
+		<div class="billbord">
+			
+		</div>
+
+		<div class="news-articles">
+			<div class="container">
+				<div class="title-section">Новости и акции</div>
+				<div class="row row_news">
+					<div class="col-lg-6 col-md-6">
+						<a href="#" class="item-article">
+							<span class="item-article__image">
+								<img src="img/news1.jpg" alt="alt">
+								<span class="item-article__tag item-article__tag_new">новинка</span>
+							</span>
+							<span class="item-article__date">31 октября 2019</span>
+							<span class="item-article__title">Полезный завтрак на каждый день</span>
+							<span class="item-article__text">Отпразднуй самый мистический праздник Хэллоуин! Начни день с<br> моментальной каши с тыквой и тыквенными семечками! Дорогие<br> покупатели! Мы работаем для того, чтобы создавать новые вкусные ...</span>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<a href="#" class="item-article">
+							<span class="item-article__image">
+								<img src="img/news2.jpg" alt="alt">
+								<span class="item-article__tag item-article__tag_relise">новинка</span>
+							</span>
+							<span class="item-article__date">31 октября 2019</span>
+							<span class="item-article__title">Спасибо нашим <br>покупателям!</span>
+							<span class="item-article__text">Дорогие покупатели! Мы работаем для того, чтобы создавать новые вкусные продукты...</span>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<a href="#" class="item-article">
+							<span class="item-article__image">
+								<img src="img/news3.jpg" alt="alt">
+								<span class="item-article__tag item-article__tag_new">новинка</span>
+							</span>
+							<span class="item-article__date">31 октября 2019</span>
+							<span class="item-article__title">Спасибо нашим <br>покупателям!</span>
+							<span class="item-article__text">Дорогие покупатели! Мы работаем для того, чтобы создавать новые вкусные продукты...</span>
+						</a>
+					</div>
+					<a href="#" class="btn-cloud btn-cloud_news"><span>Смотреть <br>все новости</span></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="constructor">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-5 col-md-6">
+						<div class="title-section">Новый вкус <br>на каждый день</div>
+						<div class="descr-title">Воспользуйтесь нашим интерактивным конструктором и с легкостью подберите оптимальный Геркулес</div>
+						<a href="#" class="btn-cloud hidden-mob"><span>Выбери <br>свой Геркулес</span></a>
+					</div>
+					<div class="col-xl-7 col-md-6">
+						<div class="icon-constructor">
+							<div class="line-dots">
+								<img src="img/line_dot.svg" alt="alt">
+							</div>
+							<img src="img/ic_constructor.png" alt="alt">
+						</div>
+						<a href="#" class="btn-cloud show-mobile"><span>Выбери <br>свой Геркулес</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-3 col-lg-4 col-md-4">
+						<a href="#" class="footer__logo">
+							<img src="img/footer-logo.svg" alt="alt">
+						</a>
+						<div class="show-tablet">
+							<a href="tel:+7 (495) 755 84 64" class="footer__phone">+7 (495) 755 84 64</a>
+							<div class="footer__descr">
+								<p>Россия, 121596, Москва, ЗАО,</p>
+								<p>ул. Горбунова, д. 2, стр. 3, оф. В909</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 hidden_tablet">
+						<a href="tel:+7 (495) 755 84 64" class="footer__phone">+7 (495) 755 84 64</a>
+						<div class="footer__descr">
+							<p>Россия, 121596, Москва, ЗАО,</p>
+							<p>ул. Горбунова, д. 2, стр. 3, оф. В909</p>
+						</div>
+						<a href="#" class="footer__politics">Политика конфиденциальности</a>
+					</div>
+					<div class="col-xl-3 col-lg-5 col-md-4">
+						<ul class="footer__nav">
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Продукция</a></li>
+							<li><a href="#">Рецепты</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Где купить</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<div class="show-tablet">
+							<a href="#" class="footer__politics">Политика конфиденциальности</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-4">
+						<div class="footer__right">
+							<ul class="social-list">
+								<li><a href="#"><img src="img/ic_vk.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/ic_fb.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/ic_insta.svg" alt="alt"></a></li>
+							</ul>
+							<div class="footer__copy">Разработка сайта — <img src="img/copy.svg" alt="alt"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+<script src="libs/jscrollpane/jquery.jscrollpane.min.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+<script src="js/common.js?ver=1.130"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
