@@ -1647,6 +1647,34 @@ line-height: 30px;
     font-size: 20px;
     line-height: 25px;
     }
+
+    /*history*/
+    .slider-history::before {
+    width: 680px;
+    height: 403px;
+    background-size: cover;
+}
+.item-history__image img {
+    height: 275px;
+    width: 363px;
+    max-width: inherit;
+    position: relative;
+    right: 0;
+    transform: scale(1.06);
+    left: 19px;
+}
+.item-history__image {
+	margin-top: 28px;
+	overflow: visible;
+}
+.item-history {
+    max-width: 370px;
+}
+.slider-history {
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -2025,6 +2053,28 @@ line-height: 30px;
 .contacts-main .title-section {
     padding-bottom: 25px;
 }
+
+/*history*/
+.slider-history::before {
+	    width: 645px;
+    height: 403px;
+	background-image: url(../img/bg_history.svg);
+}
+.item-history__image {
+	padding: 50px 0;
+}
+.item-history__image img {
+	transform: none;
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+	left: 0;
+}
+.item-history {
+	max-width: 100%;
+	width: 100%;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -2083,6 +2133,17 @@ line-height: 30px;
 
 .recepts-list .jq-selectbox__select-text {
     padding-right: 58px;
+}
+
+/*history*/
+
+.item-history__image {
+    padding: 30px 0;
+    margin: 0;
+}
+.slider-history::before {
+    width: 558px;
+    height: 343px;
 }
 }
 /* Custom, iPhone Retina */

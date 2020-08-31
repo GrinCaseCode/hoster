@@ -115,9 +115,20 @@ $(window).scroll(function(){
 		arrows: false,
 		dots: false,
 		infinite: true,
+		variableWidth: true,
+		centerMode: true,
 		slidesToShow: 1,
 		  asNavFor: '.slider-years',
 		slidesToScroll: 1,
+		 responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				centerMode: false,
+				variableWidth: false,
+			}
+		}
+		]
 	});
 
 

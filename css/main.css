@@ -3482,3 +3482,44 @@ color: #74A9EA;
 	display: block;
 	margin: 0 auto;
 }
+
+.item-history__image {
+	background-image: none;
+}
+.item-history .text-page {
+	opacity: 0;
+	transition: all 0.3s;
+}
+.slick-current .item-history .text-page {
+	opacity: 1;
+}
+.item-history {
+	max-width: 520px;
+}
+.slider-history {
+	max-width: 840px;
+	margin: 0 auto;
+	margin-top: 60px;
+	position: relative;
+}
+.slider-history::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 952px;
+	height: 575px;
+	top: -6px;
+	left: 50%;
+	z-index: 2;
+	pointer-events: none;
+	transform: translateX(-50%);
+	background-image: url(../img/bg_history.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.item-history__image img {
+        width: 509px;
+    position: relative;
+    left: 28px;
+    transform: scale(1.03);
+}
